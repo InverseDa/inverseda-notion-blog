@@ -25,7 +25,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
             className="w-full mb-4 overflow-hidden shadow-md border dark:border-black rounded-xl bg-white dark:bg-hexo-black-gray">
 
             {/* 固定高度 ，空白用图片拉升填充 */}
-            <div className="group flex flex-col h-80 justify-between">
+            <div className="group flex flex-col h-full justify-between">
 
                 {/* 头部图片 填充卡片 */}
                 {showPageCover && (
@@ -34,7 +34,9 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
                             <LazyImage
                                 src={post?.pageCoverThumbnail}
                                 alt={post.title}
-                                className="h-full w-full group-hover:scale-125 group-hover:brightness-50 brightness-90 rounded-t-md transform object-cover duration-500"
+                                className="h-full w-full group-hover:scale-125 group-hover:brightness-50 brightness-90 rounded-t-md transform object-cover duration-500 height-64"
+                                style= {{ height: '177px' }}
+
                             />
                             <div className='absolute bottom-0 left-0 text-white p-6 text-2xl replace break-words w-full shadow-text'>{post.title}</div>
                         </div>
@@ -47,7 +49,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
                     <div className="px-4 flex flex-col w-full  text-gray-700  dark:text-gray-300">
 
                         {(!showPreview || showSummary) && post.summary && (
-                            <p style={{ overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: '4', WebkitBoxOrient: 'vertical' }}
+                            <p style={{ overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: '4', WebkitBoxOrient: 'vertical', height: '112px' }}
                                 className="replace my-2 text-sm font-light leading-7">
                                 {post.summary}
                             </p>
