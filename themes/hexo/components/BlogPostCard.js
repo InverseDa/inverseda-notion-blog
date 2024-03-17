@@ -49,7 +49,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
                     <div className="px-4 flex flex-col w-full  text-gray-700  dark:text-gray-300">
 
                         {(!showPreview || showSummary) && post.summary && (
-                            <p style={{ overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: '4', WebkitBoxOrient: 'vertical', height: '112px' }}
+                            <p style={{ overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: '4', WebkitBoxOrient: 'vertical' }}
                                 className="replace my-2 text-sm font-light leading-7">
                                 {post.summary}
                             </p>
