@@ -29,7 +29,7 @@ const TopNav = props => {
   const router = useRouter()
 
   const [isOpen, changeShow] = useState(false)
-  const showSearchButton = siteConfig('HEXO_MENU_SEARCH',false,CONFIG)
+  const showSearchButton = siteConfig('HEXO_MENU_SEARCH', false, CONFIG)
 
   const toggleMenuOpen = () => {
     changeShow(!isOpen)
@@ -68,7 +68,7 @@ const TopNav = props => {
       nav && nav.classList.replace('text-white', 'text-black')
       nav && nav.classList.replace('border-transparent', 'border')
       nav && nav.classList.replace('shadow-none', 'drop-shadow-md')
-      nav && nav.classList.replace('transparent', 'dark:bg-hexo-black-gray')
+      nav && nav.classList.replace('transparent', 'dark:bg-transparent')
     }
 
     const showNav = scrollS <= windowTop || scrollS < 5 || (header && scrollS <= header.clientHeight)// 非首页无大图时影藏顶部 滚动条置顶时隐藏
