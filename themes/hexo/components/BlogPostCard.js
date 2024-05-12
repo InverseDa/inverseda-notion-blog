@@ -22,7 +22,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
             data-aos-delay={delay}
             data-aos-once="true"
             data-aos-anchor-placement="top-bottom"
-            className="w-full mb-4 overflow-hidden shadow-md border dark:border-black rounded-xl bg-white dark:bg-hexo-black-gray">
+            className="w-full mb-4 overflow-hidden shadow-md border dark:border-transparent rounded-xl bg-white dark:bg-sky-950">
 
             {/* 固定高度 ，空白用图片拉升填充 */}
             <div className="group flex flex-col h-full justify-between">
