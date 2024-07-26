@@ -6,3 +6,19 @@
 .fa-info:before {
     content: "\f05a";
 }
+
+@font-face {
+    font-family: "PingFang SC";
+    src: url('../webfonts//PingFang/PingFang-Mod-19.0d5e3-SC-Regular.otf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PingFang SC";
+    src: url('../webfonts//PingFang/PingFang-Mod-19.0d5e3-SC-Semibold.otf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: "PingFang SC";
+    src: url('../webfonts//PingFang/PingFang-Mod-19.0d5e3-SC-Regular.otf');
+    font-weight: lighter;
+}
