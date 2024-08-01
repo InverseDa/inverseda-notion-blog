@@ -50,7 +50,7 @@ const {siteInfo} =useGlobal()
       className='w-full lg:max-w-sm p-3 shadow mb-4 mx-2 bg-white dark:bg-hexo-black-gray hover:shadow-lg duration-200'>
       <div className='flex flex-col justify-between h-full'>
         {/* 封面图 */}
-        {showPageCover && (
+        {/* {showPageCover && (
           <Link href={post?.href} passHref legacyBehavior>
             <div className='flex-grow mb-3 w-full duration-200 cursor-pointer transform overflow-hidden'>
               <LazyImage
@@ -60,7 +60,7 @@ const {siteInfo} =useGlobal()
               />
             </div>
           </Link>
-        )}
+        )} */}
 
         {/* 文字部分 */}
         <div className='flex flex-col w-full'>
@@ -68,7 +68,7 @@ const {siteInfo} =useGlobal()
             <Link
               passHref
               href={post?.href}
-              className={`break-words cursor-pointer font-bold hover:underline text-xl ${showPreview ? 'justify-center' : 'justify-start'} leading-tight text-gray-700 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400`}>
+              className={`break-words cursor-pointer font-bold hover:underline text-2xl ${showPreview ? 'justify-center' : 'justify-start'} leading-tight text-gray-700 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400`}>
               {siteConfig('POST_TITLE_ICON') && (
                 <NotionIcon icon={post.pageIcon} />
               )}{' '}
